@@ -1,44 +1,60 @@
 
+
 import type { Metadata } from "next";
 import LoadingScreen from "@/components/LoadingScreen";
 import PersonSchema from "@/components/PersonSchema";
 import "./globals.css";
 
+const siteUrl = "https://abhisheksonkar.in";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abhisheksonkar.in"),
+  metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Abhishek Sonkar | Computer Science Engineer",
+    default: "Abhishek Sonkar | Official Website & Portfolio",
     template: "%s | Abhishek Sonkar",
   },
 
   description:
-    "Abhishek Sonkar is a B.Tech Computer Science and Engineering student at IIIT Surat. Explore his portfolio, software development projects, technical skills, GitHub repositories, and resume.",
+    "Abhishek Sonkar is a B.Tech Computer Science and Engineering student at IIIT Surat. Explore his official portfolio, software development projects, technical skills, GitHub repositories, and resume.",
 
-  applicationName: "Abhishek Sonkar Portfolio",
+  applicationName: "Abhishek Sonkar",
 
   authors: [
     {
       name: "Abhishek Sonkar",
-      url: "https://abhisheksonkar.in",
+      url: siteUrl,
     },
   ],
 
   creator: "Abhishek Sonkar",
   publisher: "Abhishek Sonkar",
 
+  keywords: [
+    "Abhishek Sonkar",
+    "Abhishek Sonkar IIIT Surat",
+    "Abhishek Sonkar portfolio",
+    "Abhishek Sonkar CSE",
+    "Abhishek Sonkar developer",
+    "IIIT Surat Computer Science",
+    "Software Developer Portfolio",
+    "Web Development Projects",
+    "GitHub AbhishekIIITS",
+  ],
+
   alternates: {
     canonical: "/",
   },
 
   icons: {
-  icon: [
-    {
-      url: "/icon.svg",
-      type: "image/svg+xml",
-    },
-  ],
-},
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    shortcut: "/icon.svg",
+  },
 
   robots: {
     index: true,
@@ -55,26 +71,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "/",
-    siteName: "Abhishek Sonkar Portfolio",
-    title: "Abhishek Sonkar | Computer Science Engineer",
+    url: siteUrl,
+    siteName: "Abhishek Sonkar",
+    title: "Abhishek Sonkar | Official Website & Portfolio",
     description:
-      "Official portfolio of Abhishek Sonkar, B.Tech CSE student at IIIT Surat. Explore projects, technical skills, GitHub, and software development work.",
+      "Official website of Abhishek Sonkar, B.Tech Computer Science and Engineering student at IIIT Surat. Explore projects, programming skills, software development work, and GitHub repositories.",
+
     images: [
       {
         url: "/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Abhishek Sonkar - Computer Science Engineer",
+        alt: "Abhishek Sonkar - Official Portfolio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Abhishek Sonkar | Computer Science Engineer",
+    title: "Abhishek Sonkar | Official Website & Portfolio",
     description:
-      "B.Tech CSE student at IIIT Surat. Explore Abhishek Sonkar's portfolio, projects, and technical skills.",
+      "Official portfolio of Abhishek Sonkar, CSE student at IIIT Surat. Explore projects, technical skills, and software development work.",
     images: ["/profile.jpg"],
   },
 
