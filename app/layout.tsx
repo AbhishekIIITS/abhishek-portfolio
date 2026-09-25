@@ -1,5 +1,7 @@
-import PersonSchema from "../components/PersonSchema";
+
 import type { Metadata } from "next";
+import PersonSchema from "../components/PersonSchema";
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://abhisheksonkar.in"),
@@ -22,9 +24,10 @@ export const metadata: Metadata = {
   ],
 
   creator: "Abhishek Sonkar",
+  publisher: "Abhishek Sonkar",
 
   alternates: {
-    canonical: "https://abhisheksonkar.in/",
+    canonical: "/",
   },
 
   robots: {
@@ -41,11 +44,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://abhisheksonkar.in/",
+    locale: "en_IN",
+    url: "/",
     siteName: "Abhishek Sonkar Portfolio",
     title: "Abhishek Sonkar | Computer Science Engineer",
     description:
-      "Official portfolio of Abhishek Sonkar, B.Tech CSE student at IIIT Surat. Explore projects, skills, GitHub, and software development work.",
+      "Official portfolio of Abhishek Sonkar, B.Tech CSE student at IIIT Surat. Explore projects, technical skills, GitHub, and software development work.",
     images: [
       {
         url: "/profile.jpg",
@@ -63,4 +67,21 @@ export const metadata: Metadata = {
       "B.Tech CSE student at IIIT Surat. Explore Abhishek Sonkar's portfolio, projects, and technical skills.",
     images: ["/profile.jpg"],
   },
+
+  category: "technology",
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>
+        <PersonSchema />
+        {children}
+      </body>
+    </html>
+  );
+}
