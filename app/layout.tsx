@@ -1,6 +1,6 @@
-
 import type { Metadata } from "next";
-import PersonSchema from "../components/PersonSchema";
+import LoadingScreen from "@/components/LoadingScreen";
+import PersonSchema from "@/components/PersonSchema";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -47,9 +48,12 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "/",
     siteName: "Abhishek Sonkar Portfolio",
+
     title: "Abhishek Sonkar | Computer Science Engineer",
+
     description:
       "Official portfolio of Abhishek Sonkar, B.Tech CSE student at IIIT Surat. Explore projects, technical skills, GitHub, and software development work.",
+
     images: [
       {
         url: "/profile.jpg",
@@ -62,9 +66,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Abhishek Sonkar | Computer Science Engineer",
+
     description:
       "B.Tech CSE student at IIIT Surat. Explore Abhishek Sonkar's portfolio, projects, and technical skills.",
+
     images: ["/profile.jpg"],
   },
 
@@ -79,7 +86,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <LoadingScreen />
+
         <PersonSchema />
+
         {children}
       </body>
     </html>
