@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 
   applicationName: "Abhishek Sonkar Portfolio",
 
-  icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
-  },
+  
 
   authors: [
     {
