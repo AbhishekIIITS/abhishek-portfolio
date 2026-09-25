@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Reveal from "@/components/Reveal";
 import GithubSection from "@/components/GithubSection";
@@ -27,16 +28,19 @@ export default function Home() {
             COMPUTER SCIENCE ENGINEERING · IIIT SURAT
           </p>
 
+          {/* Main SEO heading: Your full name */}
+
           <h1>
-            ABHISHEK
+            Abhishek
             <br />
-            <span>SONKAR</span>
+            <span>Sonkar</span>
           </h1>
 
           <p className="hero-description">
-            B.Tech Computer Science &amp; Engineering student at IIIT Surat.
-            I build software, solve problems and explore modern web
-            technologies.
+            I&apos;m Abhishek Sonkar, a B.Tech Computer Science
+            &amp; Engineering student at IIIT Surat.
+            I build software, solve problems and explore
+            modern web technologies.
           </p>
 
           <div className="hero-buttons">
@@ -117,19 +121,20 @@ export default function Home() {
 
             <div>
               <p>
-                I&apos;m Abhishek Sonkar, a Computer Science Engineering
-                student at IIIT Surat.
+                I&apos;m Abhishek Sonkar, a Computer Science
+                Engineering student at IIIT Surat.
               </p>
 
               <p>
-                I&apos;m interested in software development, data structures
-                and algorithms, web development and building practical
-                applications.
+                I&apos;m interested in software development,
+                data structures and algorithms, web development
+                and building practical applications.
               </p>
 
               <p>
-                I enjoy turning ideas into working software while continuously
-                improving my problem-solving and engineering skills.
+                I enjoy turning ideas into working software
+                while continuously improving my problem-solving
+                and engineering skills.
               </p>
             </div>
           </div>
@@ -150,10 +155,14 @@ export default function Home() {
 
               <h2>IIIT Surat</h2>
 
-              <p>B.Tech in Computer Science &amp; Engineering</p>
+              <p>
+                B.Tech in Computer Science &amp; Engineering
+              </p>
             </div>
 
-            <span className="location">Surat, Gujarat</span>
+            <span className="location">
+              Surat, Gujarat
+            </span>
           </div>
         </Reveal>
       </section>
@@ -172,7 +181,9 @@ export default function Home() {
 
               <h3>Programming</h3>
 
-              <p>C · C++ · Java · Python · JavaScript</p>
+              <p>
+                C · C++ · Java · Python · JavaScript
+              </p>
             </div>
           </Reveal>
 
@@ -182,7 +193,9 @@ export default function Home() {
 
               <h3>Web Development</h3>
 
-              <p>HTML · CSS · JavaScript · React · Next.js</p>
+              <p>
+                HTML · CSS · JavaScript · React · Next.js
+              </p>
             </div>
           </Reveal>
 
@@ -192,7 +205,9 @@ export default function Home() {
 
               <h3>Computer Science</h3>
 
-              <p>DSA · OOP · DBMS · Operating Systems</p>
+              <p>
+                DSA · OOP · DBMS · Operating Systems
+              </p>
             </div>
           </Reveal>
 
@@ -202,7 +217,9 @@ export default function Home() {
 
               <h3>Tools</h3>
 
-              <p>Git · GitHub · VS Code · Linux</p>
+              <p>
+                Git · GitHub · VS Code · Linux
+              </p>
             </div>
           </Reveal>
         </div>
@@ -212,7 +229,10 @@ export default function Home() {
           PROJECTS
       ===================================================== */}
 
-      <section id="projects" className="section projects-section">
+      <section
+        id="projects"
+        className="section projects-section"
+      >
         <div className="section-number">05 / PROJECTS</div>
 
         {/* PROJECT 01 */}
@@ -231,7 +251,9 @@ export default function Home() {
               <div className="preview-content">
                 <span>ONECART</span>
 
-                <small>E-COMMERCE APPLICATION</small>
+                <small>
+                  E-COMMERCE APPLICATION
+                </small>
               </div>
             </div>
 
@@ -240,9 +262,9 @@ export default function Home() {
                 <h2>OneCart</h2>
 
                 <p>
-                  A modern e-commerce web application built to explore
-                  frontend development, responsive design and interactive
-                  user interfaces.
+                  A modern e-commerce web application built
+                  to explore frontend development, responsive
+                  design and interactive user interfaces.
                 </p>
               </div>
 
@@ -287,7 +309,9 @@ export default function Home() {
               <div className="preview-content">
                 <span>TRADING AUTOMATION</span>
 
-                <small>PYTHON · API · AUTOMATION</small>
+                <small>
+                  PYTHON · API · AUTOMATION
+                </small>
               </div>
             </div>
 
@@ -296,8 +320,9 @@ export default function Home() {
                 <h2>Trading Automation</h2>
 
                 <p>
-                  A Python-based automation project exploring market
-                  monitoring, APIs, alerts and automated workflows.
+                  A Python-based automation project exploring
+                  market monitoring, APIs, alerts and automated
+                  workflows.
                 </p>
               </div>
 
@@ -328,7 +353,9 @@ export default function Home() {
       ===================================================== */}
 
       <section className="section">
-        <div className="section-number">06 / CURRENT FOCUS</div>
+        <div className="section-number">
+          06 / CURRENT FOCUS
+        </div>
 
         <div className="focus-grid">
           <Reveal delay={0}>
@@ -338,8 +365,8 @@ export default function Home() {
               <h3>DSA</h3>
 
               <p>
-                Improving algorithmic problem solving and competitive
-                programming skills.
+                Improving algorithmic problem solving and
+                competitive programming skills.
               </p>
             </div>
           </Reveal>
@@ -351,8 +378,8 @@ export default function Home() {
               <h3>Web Development</h3>
 
               <p>
-                Building modern responsive applications using React and
-                Next.js.
+                Building modern responsive applications
+                using React and Next.js.
               </p>
             </div>
           </Reveal>
@@ -364,8 +391,8 @@ export default function Home() {
               <h3>Computer Science</h3>
 
               <p>
-                Strengthening DBMS, OOP, operating systems and other core
-                fundamentals.
+                Strengthening DBMS, OOP, operating systems
+                and other core fundamentals.
               </p>
             </div>
           </Reveal>
@@ -401,8 +428,9 @@ export default function Home() {
 
             <div className="contact-intro">
               <p>
-                I&apos;m open to internships, collaborations, technical
-                discussions and interesting software projects.
+                I&apos;m open to internships, collaborations,
+                technical discussions and interesting
+                software projects.
               </p>
             </div>
           </div>
