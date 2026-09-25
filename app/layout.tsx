@@ -32,8 +32,13 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/icon.svg",
-  },
+  icon: [
+    {
+      url: "/icon.svg",
+      type: "image/svg+xml",
+    },
+  ],
+},
 
   robots: {
     index: true,
