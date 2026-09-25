@@ -1,19 +1,13 @@
-
 export default function PersonSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Abhishek Sonkar",
-    url: "https://abhisheksonkar.in/",
-    image: "https://abhisheksonkar.in/profile.jpg",
+    url: "https://abhishek-portfolio-git.vercel.app",
     jobTitle: "Computer Science Engineering Student",
-    affiliation: {
-      "@type": "CollegeOrUniversity",
-      name: "Indian Institute of Information Technology Surat",
-    },
     sameAs: [
-      "https://github.com/AbhishekIIITS",
       "https://www.linkedin.com/in/abhishek-sonkar-2b7415328",
+      "https://github.com/AbhishekIIITS",
       "https://leetcode.com/u/AbhishekIIITS/",
     ],
   };
@@ -22,7 +16,7 @@ export default function PersonSchema() {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+        __html: JSON.stringify(schema),
       }}
     />
   );
